@@ -1,4 +1,4 @@
-### Hi there 👋 This is my README file for my M18 class 1
+Hi there 👋 This is my README file for my M18 class 1
 
 <!--
 **kkosasih/kkosasih** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
