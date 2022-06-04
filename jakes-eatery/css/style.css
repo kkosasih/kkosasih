@@ -119,12 +119,21 @@ footer a {
 
 
 /* breakpoint chosen because around this width, the "soup" in "chicken tortilla soup" wraps to the next line. You may have chosen a different dimension and that's fine. Just have a reason for choosing your breakpoint! */
-
-@media (min-width: 750px) {
+/* @media (min-width: 750px) and (max-width:988px) */
+@media (min-width: 988px){
+    body{
+        background-color: red;
+    }
+}
+@media (min-width: 750px){
     header div {
         background-image: url("../images/jakes-meals.jpg");
         background-repeat: repeat;
         height: 250px;
+    }
+    .introSection {
+        display: flex;
+        flex-direction: row;
     }
     section,
     article {
