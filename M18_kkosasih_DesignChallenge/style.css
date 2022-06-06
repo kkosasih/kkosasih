@@ -272,10 +272,6 @@ html {
     flex-flow: row wrap;
     justify-content:space-around;    
   }
-  .main-bkgd .main h1 {
-    display: inline-block;
-    text-align: left;
-  }
   /*Product Page*/
   .product {
     display: flex;
