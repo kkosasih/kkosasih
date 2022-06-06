@@ -7,6 +7,8 @@ html {
   box-sizing: inherit;
 }
 
+
+/*=== LARGE SCREEN VERSION (Like computer)===*/
 @media (min-width: 750px) {
   /* navbar styling */
   nav ul {
@@ -115,6 +117,9 @@ html {
   }
 }
 
+
+
+/*=== MEDIUM SCREEN VERSION (Like tablet)===*/
 @media (min-width: 600px) and (max-width:750px) {
   /* navbar styling */
   nav ul {
@@ -207,6 +212,8 @@ html {
 }
 
 
+
+/*=== SMALL SCREEN VERSION (Like mobile and is default)===*/
 @media (min-width: 300px) {
   body {
       background-color: #082B59;
@@ -278,6 +285,7 @@ html {
     flex-flow: row wrap;
     justify-content: space-around;
   }
+  /*General Styling*/
   article {
     flex-basis: 73%;
   }
@@ -303,6 +311,7 @@ html {
     background-color: #f2f2f2;
     color: #59331d;
   }
+  /*Footer Styling*/
   footer {
     color: #f2f2f2;
     text-align: center;
