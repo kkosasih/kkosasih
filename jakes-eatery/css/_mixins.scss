@@ -1,0 +1,9 @@
+@mixin pm {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
