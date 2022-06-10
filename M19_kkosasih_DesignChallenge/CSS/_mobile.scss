@@ -68,7 +68,7 @@ html {
   /* sits inside of the white background, centered */
   .main {
     margin: 0 auto;
-    padding: 2rem;
+    padding: $padding;
     @include displayFlex(row wrap, space-around);
   }
   /*Product Page*/
@@ -159,9 +159,7 @@ html {
   }
   /*About Us Page*/
   .main-bkgd .main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    @include maxMarginPadding;
     gap: $border-size;
     @include grid(repeat(2, 1fr));
     & h1 {
@@ -226,54 +224,50 @@ html {
   }
   /*About Us Page*/
   .main-bkgd .main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    @include maxMarginPadding;
     gap: $border-size;
     @include grid(repeat(2, 1fr));
-  }
-  .main-bkgd .main h1 {
-    grid-column: 1 / -1;
-    grid-row: 1;
-  }
-  .main-bkgd .main article {
-    @include grid-id(2, 1);
-  }
-  .main-bkgd .main figure {
-    @include grid-id(2, 2);
+    & h1 {
+      grid-column: 1 / -1;
+      grid-row: 1;
+    }
+    & article {
+      @include grid-id(2, 1);
+    }
+    & figure {
+      @include grid-id(2, 2);
+    }
   }
   /*Product Page*/
   .main-bkgd .product {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    @include maxMarginPadding;
     gap: 15px;
     @include grid(repeat(2, 1fr));
-  }
-  .main-bkgd .product article h2 {
-    font-size: 1.05rem;
-  }
-  .main-bkgd .product h1 {
-    grid-column: 1 / -1;
-    grid-row: 1;
-  }
-  .main-bkgd .product .figure-one {
-    @include grid-id(2, 1);
-  }
-  .main-bkgd .product .article-one {
-    @include grid-id(2, 2);
-  }
-  .main-bkgd .product .figure-two {
-    @include grid-id(3, 1);
-  }
-  .main-bkgd .product .article-two {
-    @include grid-id(3, 2);
-  }
-  .main-bkgd .product .figure-three {
-    @include grid-id(4, 1);
-  }
-  .main-bkgd .product .article-three {
-    @include grid-id(4, 2);
+    & article h2 {
+      font-size: 1.05rem;
+    }
+    & h1 {
+      grid-column: 1 / -1;
+      grid-row: 1;
+    }
+    & .figure-one {
+      @include grid-id(2, 1);
+    }
+    & .article-one {
+      @include grid-id(2, 2);
+    }
+    & .figure-two {
+      @include grid-id(3, 1);
+    }
+    & .article-two {
+      @include grid-id(3, 2);
+    }
+    & .figure-three {
+      @include grid-id(4, 1);
+    }
+    & .article-three {
+      @include grid-id(4, 2);
+    }
   }
   /*Image*/
   figure {
