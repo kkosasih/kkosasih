@@ -1,0 +1,87 @@
+/*=== LARGE SCREEN VERSION (Like computer)===*/
+@media (min-width: 750px) {
+    //--- Navbar Styling
+    nav ul {
+      align-items: center;
+      justify-items: center;
+      gap: $border-size;
+      margin-right: 25px;
+      @include grid(repeat(5, 1fr));
+      & .logo {
+        @include grid-id(1, 1);
+      }
+      & .link-one {
+        @include grid-id(1, 8);
+      }
+      & .link-two {
+        @include grid-id(1, 9);
+      }
+      & .link-three {
+        @include grid-id(1, 10);
+      }
+    }
+    //--- Section and Card Styling
+    section,
+    article {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    .card-container {
+      @include displayFlex(row wrap, space-between);
+    }
+    .card {
+      flex-basis: 30%;
+      /* turn off mobile settings */
+      @include zeroMarPad;
+    }
+    //--- About Us Page Styling
+    .main-bkgd .main {
+      @include maxMarginPadding;
+      gap: $border-size;
+      @include grid(repeat(2, 1fr));
+      & h1 {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+      & article {
+        @include grid-id(2, 1);
+      }
+      & figure {
+        @include grid-id(2, 2);
+      }
+    }
+    //--- Product Page Styling
+    .main-bkgd .product {
+      @include grid(repeat(3, 1fr));
+      & h1 {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+      & .figure-one {
+        @include grid-id(2, 1);
+      }
+      & .article-one {
+        @include grid-id(2, 2);
+      }
+      & .figure-two {
+        @include grid-id(2, 3);
+      }
+      & .article-two {
+        @include grid-id(3, 1);
+      }
+      & .figure-three {
+        @include grid-id(3, 2);
+      }
+      & .article-three {
+        @include grid-id(3, 3);
+      }
+    }
+    /*Image*/
+    figure {
+      flex-basis: 25%;
+    }
+  }
