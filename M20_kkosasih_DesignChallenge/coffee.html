@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+    <script src="style.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha3841BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    
+    <script   src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+    <title>Gulp Roast - Coffee</title>
+  </head>
+  
+<!-- Navigation Bar and Links -->
+<!--- Navigation bar is responsive and will become a hamburger menu is minimized or using smaller screen, used Navbar Component --->
+<header class="bg-primary bg-gradient border-bottom border-5 border-primary mb-5">
+  <nav class="navbar navbar-expand-md navbar-dark ">
+    <div class="container-xl ">
+      <a class="navbar-brand" href="about.html"><img src="images/gulp-logo-light.png" alt="Gulp Roast. Click for home." width="150" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li><a href="about.html" class="text-white mx-3 nav-link fs-4"><span aria-hidden="true"></span> About </a></li>
+          <li><a href="coffee.html" class="text-primary mx-3 nav-link list-group-item-light disabled fs-4" aria-current="true"><span aria-hidden="true"></span> Coffee </a></li>
+          <li><a href="index.html" class="text-white mx-3 nav-link fs-4"><span aria-hidden="true"></span> Contact </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  
+  <!--- Content Section --->
+  <article class="m-3">
+    <!--- Title --->
+    <h2 class="my-3"><strong>Our Coffee</strong></h2>
+    <!--- Used grid layout that is responsive when screen is minimized and enlarged --->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!--- Start of new column --->
+      <div class="col">
+        <!--- Used card to keep content organized --->
+        <div class="card h-100">
+          <img src="https://assets.codepen.io/6306176/gulp-espresso.jpg" alt="Scooped columbian-blended espresso beans." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Columbian-Blended Espresso Beans</h5>
+            <p class="card-text">With our Columbian-Blended Espresso Beans, you can finally feel like a professional barista. Bright and clean with an intense burst of flavor, these full-bodied beans strike a perfect balance between the most delicate roasts and fruitful aromas.</p>
+            <!--- Button for call to action. You can hover over the button for a tooltip --->
+            <a href="coffee_product.html" type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to learn more about Columbian-Blended Espresso Beans">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!--- Start of new column --->
+      <div class="col">
+        <!--- Used card to keep content organized --->
+        <div class="card h-100">
+          <img src="https://assets.codepen.io/6306176/gulp-triple-blended.jpg " alt="Fresh beans poured into wooden bowls." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Triple-Blended Coffee Beans</h5>
+            <p class="card-text">Skillfully roasted and carefully blended, our Triple-Blended Coffee Beans don’t just wake you up in the morning, they pack a lasting punch that's sure to leave you wanting more. With silky smoothness and layered flavors, there’s really no better way to start your day.</p>
+            <a href="#" type="button" class="btn btn-secondary disabled" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to learn more about Triple-Blended Coffee Beans">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!--- Start of new column --->
+      <div class="col">
+        <!--- Used card to keep content organized --->
+        <div class="card h-100">
+          <img src="https://assets.codepen.io/6306176/gulp-light-roast.jpg " alt="A large scoop of lightly roasted coffee beans." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Lightly Roasted Coffee Beans</h5>
+            <p class="card-text">Our Lightly Roasted Coffee Beans offer the world a chance to brighten every day with a whole lot of flavor and inspiration. Try these to receive the perfect balance between bold flavor and subtle sweetness.</p>
+            <a href="#" type="button" class="btn btn-secondary disabled" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to learn more about Lightly Roasted Coffee Beans">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <!-- Footer Section -->
+  <footer class="border-secondary border-top border-5 text-center py-5 mt-5 bg-primary text-white">
+    <div class="container-sm">
+      <p>&copy;2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.</p>
+      <p><small>This site is operated by Trilogy Education Services for educational purposes only. This is not a coffee products website. This is a fictitious company and scenario intended only for internal academic purposes.</small></p>
+    </div>
+  </footer>
+  </html>
